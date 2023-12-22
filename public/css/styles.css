@@ -62,14 +62,18 @@ h6 {
     min-height: 100vh;
     max-height: auto;
 }
-
+.form_row {
+    border-radius: 24px;
+    border: none;
+    box-shadow: 0px 0px 50px 0px rgb(160, 160, 177);
+  }
 .banner {
     /* background-color: #892062; */
     border-top-right-radius: 22px;
     border-top-left-radius: 22px;
     color: var(--dark-lithan) !important;
-    box-shadow: 0px 0.3px 2px var(--dark-lithan);
-    height: 70px;
+    box-shadow: 0px 0px 10px #cfcfe7;
+    height: 55px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -91,13 +95,14 @@ h6 {
 }
 
 .banner h1 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 600;
 }
 
 .modal-open .modal {
     background-color: #cfcfe7;
     backdrop-filter: blur(100px);
+
 }
 
 .cv_form {
@@ -109,7 +114,7 @@ h6 {
     font-size: 18px;
     font-weight: 500;
     color: var(--lithan);
-    padding: 8px 0px;
+    padding: 5px 0px;
     margin-bottom: 3px;
 }
 
@@ -141,14 +146,15 @@ legend.scheduler-border {
 .cv_upload_form input[type="email"],
 .cv_upload_form input[type="date"] {
     width: 100%;
-    font-size: 16px;
-    height: 33px;
-    box-shadow: 0px 0px 1px var(--lithan);
-    border-radius: 5px;
-    border: none;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.6s ease;
-    padding: 5px;
+  font-size: 16px;
+  height: 28px;
+  box-shadow: 0px 0px 2px var(--lithan);
+  border-radius: 5px;
+  border: none;
+
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.6s ease;
+  padding: 10px;
 }
 
 .cv_upload_form input[type="text"],
@@ -161,7 +167,7 @@ legend.scheduler-border {
 }
 
 .cv_upload_form .form-errors {
-    height: 15px;
+    height: 12px;
     font-size: 12px;
 }
 
@@ -237,7 +243,7 @@ legend.scheduler-border {
     }
 
     .banner h1 {
-        font-size: 28px;
+        font-size: 22px;
     }
 }
 
@@ -246,23 +252,24 @@ legend.scheduler-border {
         padding: 5px 15px;
     }
 
-    .banner .title {
-        font-size: 25px;
-    }
 }
 
-.form_row {
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
-}
 
-@media (min-width: 576px) {
+
+@media (min-width: 999px) {
     .modal-dialog {
-        max-width: 1000px;
+        max-width: 900px;
         margin: 1.75rem auto;
     }
 }
 
+
+@media (max-width: 576px) {
+    .modal-dialog {
+        max-width: 700px;
+        margin: 1.75rem auto;
+    }
+}
 .form_row .row {
     margin-right: 0px;
     margin-left: 0px;
@@ -286,16 +293,16 @@ legend.scheduler-border {
     }
 
     .banner h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 
 .custom-fieldset {
-    margin-top: 10px;
-    padding: 5px 15px;
+    padding: 0px 15px;
     border: 2px solid #ac7698;
     border-radius: 12px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .custom-legend {
@@ -303,6 +310,9 @@ legend.scheduler-border {
     width: auto;
     padding: 4px;
     color: var(--dark-lithan);
+    font-size: 20px;
+    font-weight: bold;
+
 }
 
 #cv_upload_toastify {

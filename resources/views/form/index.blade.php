@@ -10,7 +10,7 @@
             <div class="modal-content form_row">
                 <div class="row banner">
                     <div class="col-sm-5 col-12 logo ">
-                        <img src="{{ asset('assets/img/lithan.com.png') }}" class="logo" width="250">
+                        <img src="{{ asset('assets/img/lithan.com.png') }}" class="logo" width="180">
                     </div>
 
                     <div class="col-sm-7 col-12 title ">

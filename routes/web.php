@@ -23,6 +23,3 @@ Route::get('/', function () {
 })->name('home');
 
 Route::post('/add/store', [CVUploadController::class, 'store'])->name('add.store');
-Route::get('/terms-and-conditions', function () {
-    return view('terms-and-conditions');
-})->name('tac');
